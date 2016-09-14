@@ -20,7 +20,7 @@ $(function(){
 	
 
 
-	//Part 3: Swap out any reference of "bacon" to "Laser" to "Asti"
+	//Part 3: Swap out any reference of "bacon" to "Laser" to "Asti Spumante"
 	$("p").not("aside p").text(function () {
    		return $(this).text().replace("Bacon", "Asti Spumante"); 
 		});
@@ -28,9 +28,7 @@ $(function(){
 
 
 	//Part 4: Delete the last two posts in the middle section (they have a CSS class "post")
-	$(".post:last").remove();
-	$(".post:last").remove();
-	$(".post:last").remove();
+	$(".post").slice(-2).remove();
 
 
 	//Part 5: Hide images in the aside
